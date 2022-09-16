@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Ahorcado</title>
+</head>
+<body>
+    <header>
+        <h1>Ahorcado</h1>
+    </header>
+    <main>
+        <div class="container__game">
+            <div id="containerCanvas">
+                <canvas id="canvas" ></canvas>
+            </div>
+            <!--Contenedor adivina la plabra-->
+            <div id="containerSecretWord">
+                <h2 style="margin-top: 20px;">Adivina la palabra</h2>
+                <p id="secretWord"></p>
+                <div class="container__button">
+                    <button onclick="startGame()" class="menu_button">Cambiar palabra</button>
+                    <button onclick="backToMenu()" class="menu_button">Regresar</button>
+                </div>
+            </div>
+            <!--Contenedor añadir palabra-->
+            <div id="containerAddWord" class="container__form">
+                <h2 style="margin-top: 20px;">Escribe una palabra</h2>
+                <input type="text" id="inputWord" pattern="[A-Z]"/>
+                <span id="spanResponse"></span>
+                <button onclick="addWord()" class="menu_button">Añadir</button>
+                <button onclick="backToMenu()" class="menu_button">Regresar</button>
+            </div>
+            <!--Contenedor Menú-->
+            <div id="containerInfo"class="container__form">
+                <h2 id="resultTitle">Menú</h2>
+                <div id="message"></div>
+                <button onclick="startGame()" class="menu_button">Iniciar juego</button>
+                <button onclick="showAddWorForm()" class="menu_button">Añadir palabra</button>
+            </div>
+        </div>
+
+        <div id="letters">
+            <button>A</button>
+            <button>B</button>
+            <button>C</button>
+            <button>D</button>
+            <button>E</button>
+            <button>F</button>
+            <button>G</button>
+            <button>H</button>
+            <button>I</button>
+            <button>J</button>
+            <button>K</button>
+            <button>L</button>
+            <button>M</button>
+            <button>N</button>
+            <button>Ñ</button>
+            <button>O</button>
+            <button>P</button>
+            <button>Q</button>
+            <button>R</button>
+            <button>S</button>
+            <button>T</button>
+            <button>U</button>
+            <button>V</button>
+            <button>W</button>
+            <button>X</button>
+            <button>Y</button>
+            <button>Z</button>
+        </div>
+    </main>
+</body>
+</html>
